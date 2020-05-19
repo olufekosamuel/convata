@@ -13,15 +13,113 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header {
+  margin-top: 150px;
+}
+
+.exchange{
+  font-weight: lighter;
+}
+.headerbottomtext{
+  margin-top: 20px;
+  color: lightgray;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.currencyconverter{
+  margin-top: 70px;
+}
+
+select {
+
+  /* styling */
+  background-color: white;
+  border: thin solid blue;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  /* reset */
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+select.round {
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    radial-gradient(#ddd 70%, transparent 72%);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - .5em) .5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1.5em 1.5em;
+  background-repeat: no-repeat;
+}
+
+select.round:focus {
+  background-image:
+    linear-gradient(45deg, white 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, white 50%),
+    radial-gradient(gray 70%, transparent 72%);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - .5em) .5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1.5em 1.5em;
+  background-repeat: no-repeat;
+  border-color: green;
+  outline: 0;
+}
+
+
+
+.currencyform{
+  color: lightgray;
+  margin-bottom: 0px;
+}
+
+.currencySelect:focus{
+  border-color: white;
+}
+
+.currencySelect{
+  border-radius: 0px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  padding-left: 0px;
+  margin-top: 0px;
+}
+
+.currencyInput{
+  border-width: 0px;
+  font-size: 120px;
+  font-weight: lighter;
+}
+
+.currentrate{
+  font-size: 36px;
+}
+
+.badrate{
+  font-size: 36px;
+  color:rgb(255, 46, 46);
 }
 
 .App-link {
